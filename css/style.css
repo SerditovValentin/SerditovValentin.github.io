@@ -1,0 +1,197 @@
+/*Тело*/
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*Заголовок*/
+header {
+    /*margin-left: 110px;*/
+    text-align: center;
+    background-color: #000000;
+    border-color: #000000 #000000 white #000000;
+    border-style: solid;
+}
+
+.logo {
+    width: 20%;
+    height: 20%;
+}
+
+/*Верхняя навигация*/
+.nav-inline {
+    text-align: center;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #000000;
+   
+}
+
+#navbar span {
+    float: left;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 7px 14px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#navbar a {
+    float: left;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Боковая навигация */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f2f2f2;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 0px;}
+  .sidenav a {font-size: 20px;}
+}
+
+
+main {
+    margin-top: 5%;
+    padding: 0px 10px;
+}
+
+.main{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 70px;
+}
+
+.head_h1 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2 {
+    
+    margin-bottom: 20px;
+    font-size: 25px
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px
+}
+
+p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px
+}
+
+table {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 18px
+}
+
+li {
+    font-size: 18px
+}
+
+.scrin {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.vidos {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+  .sticky + .content {
+    padding-top: 60px;
+}
+
+/*Перемещение по страницам*/
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    width: 35px;
+    height: 35px;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    font-size: 20px;
+    justify-content:center
+}
+
+.pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+/*Подвал*/
+.footer {
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    display: flex;
+    justify-content:center;
+    padding: 40px;
+}

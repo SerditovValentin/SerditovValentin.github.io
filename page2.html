@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>XML и XML-словари в Web</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/turretcss/dist/turretcss.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo1.jpg" alt="">
+    </header>
+    
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="https://html5css.ru/html/default.php" target="_blank">HTML учебник</a>
+            <a href="https://html5css.ru/css/default.php" target="_blank">CSS учебник</a>
+            <a href="https://www.youtube.com/watch?v=Apl6MJpTKCA&t=1s&ab_channel=ComputerScienceCenter" target="_blank">Дополнительная информация</a>
+            <a href="https://vk.com/serditovvalentin" target="_blank">Контакт</a>
+        </div>
+
+        <div id="navbar">
+            <a><span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span></a>
+            <a href="https://habr.com/ru/articles/524288/" target="_blank">Статья о XMl</a>
+            <a href="https://dzen.ru/news/rubric/computers?issue_tld=ru" target="_blank">Новости</a>
+            <a href="https://developers.sber.ru/gigachat/login" target="_blank">Задать вопрос</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main">
+            <h2>Каковы области применения XML?</h2>
+            <p>Расширяемый язык разметки (XML) является базовой технологией тысяч приложений, начиная от обычных инструментов повышения производительности, таких как обработка текстов, и заканчивая программным обеспечением для публикации книг и даже сложными системами настройки приложений.</p>
+            <h3>Передача данных</h3>
+            <p>Можно использовать XML для передачи данных между двумя системами, в которых одни и те же данные хранятся в разных форматах. Например, на вашем веб-сайте даты хранятся в формате ММ/ДД/ГГГГ, а в бухгалтерской системе даты хранятся в формате ДД/ММ/ГГГГ. Вы можете перенести данные с веб-сайта в систему бухгалтерского учета с помощью XML. Ваши разработчики могут писать код, который автоматически преобразует указанное ниже.</p>
+            <ul>
+                <li>Данные веб-сайта в формате XML</li>
+                <li>Данные XML к данным системы бухгалтерского учета</li>
+                <li>Данные системы бухгалтерского учета возвращаются в формат XML</li>
+                <li>XML-данные возвращаются к данным веб-сайта</li>
+            </ul>
+            <h3>Интернет-приложения</h3>
+            <p>XML обеспечивает структуру данных, которые вы видите на веб-страницах. Другие технологии веб-сайта, такие как HTML, работают с XML для представления посетителям веб-сайта согласованных и релевантных данных. Например, рассмотрим веб-сайт электронной коммерции, на котором продается одежда. Вместо того, чтобы показывать всю одежду всем посетителям, веб-сайт использует XML для создания настраиваемых веб-страниц на основе предпочтений пользователя. Он показывает товары определенных брендов, выполняя фильтрацию по тегу &lt;brand&gt;.</p>
+            <h3>Документация</h3>
+            <p>Можно использовать XML для указания структурной информации любого технического документа. Другие программы затем обрабатывают структуру документа для ее гибкого представления. Например, существуют теги XML для абзаца, элемента в нумерованном списке и заголовка. Используя эти теги, другие типы программного обеспечения автоматически подготавливают документ к использованию, например, к печати и публикации на веб-странице.</p>
+            <h3>Тип данных</h3>
+            <p>Многие языки программирования поддерживают XML в качестве типа данных. Благодаря этой поддержке вы можете легко писать программы на других языках, которые работают непосредственно с файлами XML.</p>
+            <p>При помощи XML-языка можно:</p>
+            <ul>
+                <li>записывать иерархию – «один элемент подчиняется другому»;</li>
+                <li>осуществлять разметку текста по смыслу – от важного элемента к второстепенному;</li>
+                <li>хранить типовые данные – настройки приложений и программ, названия элементов, скрипты;</li>
+                <li>размечать текст (text) для его дальнейшего применения в машинном обучении;</li>
+                <li>хранить результаты работы тестовых редакторов.</li>
+            </ul>
+            <p>Иерархические данные XML могут быть использованы при программировании в качестве дополнительного инструмента. Они встречаются в языках:</p>
+            <ul>
+                <li>OWL и RDF – при описании структуры и ресурсов каталогов;</li>
+                <li>WSDL – во время обращения к удаленным веб-сервисам и программам;</li>
+                <li>XHTML – для отображения различных страниц в интернете;</li>
+                <li>SVG – при описании векторных изображений;</li>
+                <li>XAML – для описания интерфейсов имеющегося программного обеспечения.</li>
+            </ul>
+        </div>
+
+        <div class="vidos">
+            <iframe width="355" height="225" src="https://www.youtube.com/embed/O87VaZAN7As?si=jdookjVv2hKDAQof" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </main>
+
+     <!-- Кнопки для перехода на другию страницу -->
+     <div class="pagination group group-m group-center">
+        <a href="index.html">1</a>
+        <a class="active">2</a>
+        <a href="page3.html">3</a>
+        <a href="page4.html">4</a>
+        <a href="page5.html">5</a>
+        <a href="page6.html">6</a>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer">
+            <nav class="nav-inline">
+                <ul>
+                    <li>Версия 1.0</li>
+                    <li><a href="...">GitHub</a></li>
+                    <li><a href="https://www.google.com/">Проблемы</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                  </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Скрипт верхнего закрепляющегося меню -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+
+    <!-- Скрипт бокового меню -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

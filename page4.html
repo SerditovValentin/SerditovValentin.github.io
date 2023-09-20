@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>XML и XML-словари в Web</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/turretcss/dist/turretcss.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo1.jpg" alt="">
+    </header>
+    
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="https://html5css.ru/html/default.php" target="_blank">HTML учебник</a>
+            <a href="https://html5css.ru/css/default.php" target="_blank">CSS учебник</a>
+            <a href="https://www.youtube.com/watch?v=Apl6MJpTKCA&t=1s&ab_channel=ComputerScienceCenter" target="_blank">Дополнительная информация</a>
+            <a href="https://vk.com/serditovvalentin" target="_blank">Контакт</a>
+        </div>
+
+        <div id="navbar">
+            <a><span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span></a>
+            <a href="https://habr.com/ru/articles/524288/" target="_blank">Статья о XMl</a>
+            <a href="https://dzen.ru/news/rubric/computers?issue_tld=ru" target="_blank">Новости</a>
+            <a href="https://developers.sber.ru/gigachat/login" target="_blank">Задать вопрос</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main">
+            <h3>Об элементах</h3>
+            <p>XML-сообщения включают в себя разнообразные элементы. Такое название получили основные составляющие файла. Их каждый документ должен иметь в обязательном порядке.</p>
+            <p>Элемент – это XML-данные, «строительные блоки» исходного кода. Они наделены различными методиками поведения. Ведут себя как контейнеры для хранения различных XML-данных и компонентов, текста, мультимедиа. Элемент нужен для формирования исходного файла. Область действия каждого такого компонента строго ограничена при помощи начального и конечного тегов.</p>
+            <p>&nbsp;</p>
+            <p>&lt;element-name attribute1 attribute2&gt;</p>
+            <p>....content</p>
+            <p>&lt;/element-name&gt;</p>
+            <p>&nbsp;</p>
+            <p>Выше – возможный пример формирования элемента. Этот шаблон нужен для создания любого, даже элементарного документа на рассматриваемом ЯП.</p>
+            <p>В заданной форме:</p>
+            <ul>
+                <p>element name – имя элемента, которое должно быть одинаковым в начале и конце «запроса»;</p>
+                <p>имя является чувствительным к регистру;</p>
+                <p>attribute1 и attribute2 – атрибуты (свойства) компонента, разделяемые пробелами.</p>
+            </ul>
+            <p>Если программист решил работать с элементами и XML-документами, ему необходимо запомнить следующее:</p>
+            <ol>
+                <p>Имя элемента может быть составлено буквами и цифрами. Использование знаков препинания невозможно за исключение дефиса, точки и нижнего подчеркивания.</p>
+                <p>Все имена чувствительны к регистру. Это относится не только к именам, но и к другим элементам XML-данных.</p>
+                <p>Начальный и конечный теги компонентов должны быть одинаковыми.</p>
+            </ol>
+            <p>Каждый элемент XML-документа поддерживает различные типы данных. Он может включать в себя не только обычный текст, но и другие компоненты.</p>
+            <h3>Об атрибутах</h3>
+            <p>При написании команды на learning language, необходимо обратить внимание на такой компонент разработки как атрибуты. Это элементы, которые задают свойства для других составляющих кода. Формируются парами имя-значение. Их у тегов может быть несколько.</p>
+            <p>При написании атрибутов для XML-данных необходимо помнить следующее:</p>
+            <ul>
+                <p>регистр имеет значение;</p>
+                <p>один и тот же атрибут не может иметь несколько значений;</p>
+                <p>имя атрибута указывается без скобок, в кавычках размещаются присваиваемые значения;</p>
+                <p>имя не должно появляться в начальных и пустых тегах более 1 раза;</p>
+                <p>объявление происходит при определении типа XML-документа при помощи списка;</p>
+                <p>значения поддерживают не только прямые значения, но и ссылки на сущности внешних объектов.</p>
+            </ul>
+            <p>Атрибуты используются для добавления уникальных меток элементам, их дальнейшего размещения в имеющейся категории. Способствуют размещению флагов, а также другие связывания переданных элементов со строками XML-данных.</p>
+            <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Тип атрибута</th>
+                    <th scope="col">Характеристика</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>String</td>
+                    <td>Строка. В качестве значений атрибута XML может выступать любая буквенная строка. CDATA - символьные данные. Это указывает на то, что любая строка сиволов без разметки становиться частью атрибута.</td>
+                  </tr>
+                  <tr>
+                    <td>TokensizedType</td>
+                    <td>Могут быть представлены несколькими способами: ID - указание элемента кода в качестве уникального; IDREF - применяется для ссылки на идентификатор, который был предопределён для другого элемента; ENTITY - атрибут представляет сущность извне внутри файла; IDREFS - ссылка на все идентификаторы элемента; ENTITIES - атрибут представляет внешние объекты; NMTOKEN - то же самое, что и CDATA, но с ограничениями данных, исспользуемых в качестве части атрибута.</td>
+                  </tr>
+                  <tr>
+                    <td>EnumeratedType</td>
+                    <td>Значения могут быть NotationTupe или перечисление. Первый вариант сслается на Notation, объявленный в XML. Второй определяет список значений, которым должно удовлетворять значение атрибута.</td>
+                  </tr>
+                </tbody>
+            </table>
+            <p>Атрибуты не поддерживают множественные значения, древовидные структуры. У них плохая расширяемость. Элементы лучше использовать для данных, атрибуты – для других сведений в исходном файле.</p>
+        </div>
+
+
+        <div class="vidos"><iframe width="355" height="225" src="https://www.youtube.com/embed/Pu1LQSVCfbM?si=VG649TijPPhc2reF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    </main>
+
+     <!-- Кнопки для перехода на другию страницу -->
+     <div class="pagination group group-m group-center">
+        <a href="index.html">1</a>
+        <a href="page2.html">2</a>
+        <a href="page3.html">3</a>
+        <a class="active">4</a>
+        <a href="page5.html">5</a>
+        <a href="page6.html">6</a>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer">
+            <nav class="nav-inline">
+                <ul>
+                    <li>Версия 1.0</li>
+                    <li><a href="...">GitHub</a></li>
+                    <li><a href="https://www.google.com/">Проблемы</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                  </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Скрипт верхнего закрепляющегося меню -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+
+    <!-- Скрипт бокового меню -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>XML и XML-словари в Web</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/turretcss/dist/turretcss.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo1.jpg" alt="">
+    </header>
+    
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="https://html5css.ru/html/default.php" target="_blank">HTML учебник</a>
+            <a href="https://html5css.ru/css/default.php" target="_blank">CSS учебник</a>
+            <a href="https://www.youtube.com/watch?v=Apl6MJpTKCA&t=1s&ab_channel=ComputerScienceCenter" target="_blank">Дополнительная информация</a>
+            <a href="https://vk.com/serditovvalentin" target="_blank">Контакт</a>
+        </div>
+
+        <div id="navbar">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+            <a href="https://habr.com/ru/articles/524288/" target="_blank">Статья о XMl</a>
+            <a href="https://dzen.ru/news/rubric/computers?issue_tld=ru" target="_blank">Новости</a>
+            <a href="https://developers.sber.ru/gigachat/login" target="_blank">Задать вопрос</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="head_h1"><h1>XML и XML-словари в Web</h1></div>
+        
+        
+        <div class="main">
+
+            <h2>Что такое XML?</h2>
+            <p>Расширяемый язык разметки (XML) позволяет определять и хранить данные совместно используемым способом. XML поддерживает обмен информацией между компьютерными системами, такими как веб-сайты, базы данных и сторонние приложения. Предопределенные правила упрощают передачу данных в виде XML-файлов по любой сети, поскольку получатель может использовать эти правила для точного и эффективного чтения данных.</p>
+        </div>
+
+        <div class="main">
+            <h2>Почему XML важен?</h2>
+            <p>Расширяемый язык разметки (XML) – это язык разметки, который предоставляет правила для определения любых данных. В отличие от других языков программирования, XML не может выполнять вычислительные операции сам по себе. Вместо этого для управления структурированными данными можно использовать любой язык программирования или программное обеспечение.</p>
+            <h3>Теги XML</h3>
+            <p>Для определения данных используются символы разметки, называемые тегами в XML. Например, для представления данных для книжного магазина можно создать такие теги, как &lt;book&gt;, &lt;title&gt; и &lt;author&gt;. Ваш XML-документ для одной книги будет содержать указанное ниже.</p>
+            <p>&lt;book&gt;</p>
+            <p>&lt;title&gt; Изучение Amazon Web Services &lt;/title&gt;</p>
+            <p>&lt;author&gt; Марк Уилкинс &lt;/author&gt;</p>
+            <p>&lt;/book&gt;</p>
+            <p>Теги обеспечивают сложное кодирование данных для интеграции информационных потоков между различными системами.</p>
+        </div>
+        
+        <div class="main">
+            <h2>В чем преимущества использования XML?</h2>
+            <h3>Поддержка межделовых транзакций</h3>
+            <p>Когда компания продает товар или сервис другой компании, им необходимо обмениваться такой информацией, как стоимость, спецификации и графики поставок. С помощью расширяемого языка разметки (XML) они могут обмениваться всей необходимой информацией в электронном виде и автоматически закрывать сложные сделки без вмешательства человека. </p>
+            <h3>Поддержание целостности данных</h3>
+            <p>XML позволяет передавать данные вместе с описанием данных, предотвращая потерю целостности данных. Эту описательную информацию можно использовать для выполнения указанных ниже действий.</p>
+            <ul>
+                <li>Проверьте точность данных</li>
+                <li>Автоматическая настройка представления данных для разных пользователей</li>
+                <li>Согласованное хранение данных на нескольких платформах</li>
+            </ul>
+            <h3>Повысьте эффективность поиска</h3>
+            <p>Компьютерные программы, такие как поисковые системы, могут сортировать и классифицировать XML-файлы более эффективно и точно, чем другие типы документов. Например, слово туши может быть существительным или глаголом. На основе тегов XML поисковые системы могут точно классифицировать метки для релевантных результатов поиска. Таким образом, XML помогает компьютерам более эффективно интерпретировать естественный язык.</p>
+            <h3>Разработка гибких приложений</h3>
+            <p>С помощью XML можно удобно обновлять или изменять дизайн приложения. Многие технологии, особенно новые, имеют встроенную поддержку XML. Они могут автоматически читать и обрабатывать файлы данных XML, чтобы вы могли вносить изменения без необходимости переформатирования всей базы данных.</p>
+        </div>
+
+
+        <div class="vidos">
+            <iframe width="355" height="225" src="https://www.youtube.com/embed/1JblVElt5K0?si=h6Su1roMb50Wr0-s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+    </main>
+
+    <!-- Кнопки для перехода на другию страницу -->
+    <div class="pagination group group-m group-center">
+        <a class="active">1</a>
+        <a href="page2.html">2</a>
+        <a href="page3.html">3</a>
+        <a href="page4.html">4</a>
+        <a href="page5.html">5</a>
+        <a href="page6.html">6</a>
+    </div>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer">
+            <nav class="nav-inline">
+                <ul>
+                    <li>Версия 1.0</li>
+                    <li><a href="...">GitHub</a></li>
+                    <li><a href="https://www.google.com/">Проблемы</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                  </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Скрипт верхнего закрепляющегося меню -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+
+    <!-- Скрипт бокового меню -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
